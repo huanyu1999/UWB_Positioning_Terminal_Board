@@ -2505,13 +2505,12 @@
 	)
 	(text "USB_OTG1_DEVICE\n"
 		(exclude_from_sim no)
-		(at 68.326 41.402 0)
+		(at 68.58 41.402 0)
 		(effects
 			(font
-				(face "Maple Mono NF Medium")
+				(face "KiCad Font")
 				(size 2.54 2.54)
-				(thickness 0.762)
-				(bold yes)
+				(thickness 0.3175)
 				(color 255 88 5 1)
 			)
 		)
@@ -2546,6 +2545,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b68f1c69-4904-4e0d-b445-b9eef451e5fb")
+	)
+	(junction
+		(at 154.94 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e38d2953-82cb-4527-af4b-f2288de8bc8e")
 	)
 	(no_connect
 		(at 113.03 99.06)
@@ -2594,6 +2599,16 @@
 			(type default)
 		)
 		(uuid "39f2effb-a82b-4a99-8579-3f741efb596e")
+	)
+	(wire
+		(pts
+			(xy 154.94 71.12) (xy 162.56 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fefc4ce-e8df-4278-9234-c71871908727")
 	)
 	(wire
 		(pts
@@ -2886,6 +2901,17 @@
 		)
 		(uuid "6ccd1969-f3eb-4633-b7c0-8dc255ed4850")
 	)
+	(hierarchical_label "USB_OTG1_VBUS"
+		(shape output)
+		(at 162.56 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "93017798-d0ec-4739-a54f-f77abd7af5e7")
+	)
 	(hierarchical_label "USB_OTG1_DN"
 		(shape bidirectional)
 		(at 191.77 88.9 0)
@@ -2993,7 +3019,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1dc79da1-dc7b-4c3f-b87b-8239d442e92c")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR097"
 			(at 154.94 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -3053,7 +3079,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
-					(reference "#PWR053")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -3070,7 +3096,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "57192049-872f-44f9-9778-1101ae321910")
-		(property "Reference" "R23"
+		(property "Reference" "R37"
 			(at 126.746 77.724 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3090,7 +3116,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 133.604 77.724 90)
 			(hide yes)
 			(show_name no)
@@ -3132,7 +3158,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
-					(reference "R23")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -3149,7 +3175,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "575ea109-8d7d-4272-9870-4dd0d93437b5")
-		(property "Reference" "U5"
+		(property "Reference" "U6"
 			(at 174.752 95.504 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3226,7 +3252,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
-					(reference "U5")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -3243,7 +3269,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6e0af593-883b-477e-8685-51affa0089b0")
-		(property "Reference" "L3"
+		(property "Reference" "L5"
 			(at 121.92 70.104 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3253,8 +3279,8 @@
 				)
 			)
 		)
-		(property "Value" "600R,1A"
-			(at 128.27 67.31 90)
+		(property "Value" "600 Ohm @ 100MHz,1A"
+			(at 124.206 68.326 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3305,7 +3331,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
-					(reference "L3")
+					(reference "L5")
 					(unit 1)
 				)
 			)
@@ -3323,7 +3349,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7714749e-478a-4975-bfc5-d2daefef0949")
-		(property "Reference" "D6"
+		(property "Reference" "D11"
 			(at 146.3675 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3385,7 +3411,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
-					(reference "D6")
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -3403,7 +3429,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bd01490e-ea7e-483d-aa7a-40c57a06e1b0")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR0101"
 			(at 90.17 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -3463,7 +3489,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
-					(reference "#PWR048")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -3480,7 +3506,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c6cf2682-6633-40c5-a6c1-04f536a7c5ca")
-		(property "Reference" "J3"
+		(property "Reference" "J4"
 			(at 81.534 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3500,7 +3526,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
 			(at 101.6 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -3587,7 +3613,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
-					(reference "J3")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -3604,7 +3630,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d3a36fed-48a5-4ba8-b3c5-f6fcd7c8bffa")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR099"
 			(at 179.07 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -3664,7 +3690,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
-					(reference "#PWR052")
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -3681,7 +3707,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ec51d64c-b828-4da1-b60c-fef506e15f1a")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR0100"
 			(at 179.07 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -3741,7 +3767,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
-					(reference "#PWR051")
+					(reference "#PWR0100")
 					(unit 1)
 				)
 			)
@@ -3758,7 +3784,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f04201b2-c51c-4286-8d01-bb66f5d0eb6c")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR098"
 			(at 147.32 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3818,7 +3844,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
-					(reference "#PWR049")
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -3835,7 +3861,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f84690ad-e512-49a4-96ee-035ac11144ca")
-		(property "Reference" "R22"
+		(property "Reference" "R36"
 			(at 126.746 75.184 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3855,7 +3881,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 133.096 77.216 90)
 			(hide yes)
 			(show_name no)
@@ -3897,7 +3923,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
-					(reference "R22")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -3914,7 +3940,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f89eb720-086c-4376-a960-ba19d0fb5247")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR096"
 			(at 137.16 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -3974,7 +4000,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
-					(reference "#PWR050")
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)

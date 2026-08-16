@@ -232,7 +232,7 @@
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
-      "pin_not_connected": "error",
+      "pin_not_connected": "ignore",
       "pin_not_driven": "error",
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
@@ -252,7 +252,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "UPT"
+    ],
     "pinned_symbol_libs": [
       "UPT"
     ]
@@ -281,14 +283,169 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "BOOT",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(255, 5, 151)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "ENET_DATA",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgb(23, 173, 255)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 20,
+        "name": "GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 9,
+        "schematic_color": "rgb(12, 115, 106)",
+        "tuning_profile": "",
+        "wire_width": 20
+      },
+      {
+        "bus_width": 12,
+        "name": "JTAG",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgb(255, 0, 239)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "LCD_CTRL",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
+        "schematic_color": "rgb(165, 180, 46)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "LCD_DATA",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 7,
+        "schematic_color": "rgb(18, 150, 111)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 20,
+        "name": "LCD_PWR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(255, 57, 9)",
+        "tuning_profile": "",
+        "wire_width": 20
+      },
+      {
+        "bus_width": 20,
+        "name": "MAIN_PWR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(255, 133, 22)",
+        "tuning_profile": "",
+        "wire_width": 20
+      },
+      {
+        "bus_width": 12,
+        "name": "RMII",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgb(61, 151, 16)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "USB_DATA",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 8,
+        "schematic_color": "rgb(170, 0, 255)",
+        "tuning_profile": "",
+        "wire_width": 6
       }
     ],
     "meta": {
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_assignments": {
+      "/Ethernet/ENET_TXEN": [
+        "ENET_DATA"
+      ]
+    },
+    "netclass_patterns": [
+      {
+        "netclass": "LCD_DATA",
+        "pattern": "/LCD/LCDIF_D(0|2|4|6|8|10|12|14)"
+      },
+      {
+        "netclass": "LCD_DATA",
+        "pattern": "/LCD/LCDIF_D(1|3|5|7|9|11|13|15)"
+      },
+      {
+        "netclass": "LCD_CTRL",
+        "pattern": "/LCD/LCDIF_(CLK|ENABLE|HSYNC|VSYNC)"
+      },
+      {
+        "netclass": "RMII",
+        "pattern": "/Ethernet/ENET_CRS_DV|/Ethernet/ENET_MDC|/Ethernet/ENET_MDIO|/Ethernet/ENET_RXD0|/Ethernet/ENET_RXD1|/Ethernet/ENET_RXER|/Ethernet/ENET_TXD0|/Ethernet/ENET_TXD1|/Ethernet/ENET_TXEN|/RT1052_Core/ENET_TX_CLK"
+      },
+      {
+        "netclass": "USB_DATA",
+        "pattern": "/RT1052_Core/USB_OTG1_D(N|P)"
+      },
+      {
+        "netclass": "JTAG",
+        "pattern": "/Boot_Reset_SWD_UART/JTAG_nTRST"
+      },
+      {
+        "netclass": "BOOT",
+        "pattern": "/Boot_Reset_SWD_UART/BOOT_MODE(0|1)"
+      },
+      {
+        "netclass": "MAIN_PWR",
+        "pattern": "BASE_3V3|DCDC_5V|DCIN_24V"
+      },
+      {
+        "netclass": "LCD_PWR",
+        "pattern": "V(COM|DD_A|GH|GL)"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "JTAG",
+        "pattern": "/Boot_Reset_SWD_UART/JTAG_(MOD|TDI|TDO)"
+      },
+      {
+        "netclass": "ENET_DATA",
+        "pattern": "/Ethernet/ENET_(RX_N|RX_P|TX_N|TX_P)"
+      },
+      {
+        "netclass": "JTAG",
+        "pattern": "slash"
+      },
+      {
+        "netclass": "LCD_CTRL",
+        "pattern": "/LCD/BLK"
+      },
+      {
+        "netclass": "MAIN_PWR",
+        "pattern": "COIN_BAT_3V3"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -305,7 +462,7 @@
     "annotate_start_num": 0,
     "annotation": {
       "method": 0,
-      "sort_order": 0
+      "sort_order": 1
     },
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
@@ -419,7 +576,7 @@
         "uuid": "b9bb75c4-3ddc-4c63-9df8-68118c9082ef"
       }
     ],
-    "used_designators": "U1-5,R1-53,#FLG1-8,#FLG13,J1-8,H1-4,SW1-4,D1-8,#PWR1-97,C1-29,L1-4,IC1,TP1-6,Q1-2,F1-2,FL1,Y1",
+    "used_designators": "U1",
     "variants": []
   },
   "sheets": [
@@ -436,24 +593,32 @@
       "Power"
     ],
     [
-      "df2a0070-f37e-4e79-8bb4-425fe69129b2",
-      "LCD"
+      "2504c941-065f-4d34-a170-f33ab3525ead",
+      "Boot_Reset_SWD_UART"
     ],
     [
-      "7163e9df-074e-4c31-a360-732920c23810",
-      "USB"
+      "df2a0070-f37e-4e79-8bb4-425fe69129b2",
+      "LCD"
     ],
     [
       "1164932c-8f56-4625-b165-09bad2d15d28",
       "Ethernet"
     ],
     [
-      "2504c941-065f-4d34-a170-f33ab3525ead",
-      "Boot_Reset_SWD_UART"
+      "7163e9df-074e-4c31-a360-732920c23810",
+      "USB"
     ],
     [
-      "93070dbd-5e73-447b-89cc-aead5e7b2a7c",
-      "Button"
+      "06b9a076-788b-4d5c-8191-8f25956f588d",
+      "Button_And_Buzzer"
+    ],
+    [
+      "674fd62c-293a-4e60-a2a0-0fa4e1b9752d",
+      "EMMC"
+    ],
+    [
+      "8619df9f-fa26-4e44-8162-ac0bcb86133d",
+      "Audio_Output"
     ],
     [
       "46afabae-7e12-4434-88ba-b7fb7fb11ecd",

@@ -3370,145 +3370,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -3627,7 +3488,7 @@
 	)
 	(rectangle
 		(start 14.478 17.526)
-		(end 281.94 167.64)
+		(end 281.94 165.1)
 		(stroke
 			(width 0.508)
 			(type dash)
@@ -3640,12 +3501,12 @@
 	)
 	(text "Ethernet"
 		(exclude_from_sim no)
-		(at 22.86 15.24 0)
+		(at 21.59 15.24 0)
 		(effects
 			(font
-				(face "Maple Mono NF Medium")
+				(face "KiCad Font")
 				(size 2.54 2.54)
-				(thickness 0.762)
+				(thickness 0.508)
 				(bold yes)
 				(color 255 88 5 1)
 			)
@@ -3807,6 +3668,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ea6435d1-c736-4b7f-b2c2-ef64bc526f01")
+	)
+	(no_connect
+		(at 76.2 81.28)
+		(uuid "3e16e0a4-20d6-4477-aa85-b91a04edec7f")
 	)
 	(no_connect
 		(at 76.2 104.14)
@@ -4074,16 +3939,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 39.37) (xy 27.94 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d222766-794b-4ce6-8ff1-d1d8e748b83d")
-	)
-	(wire
-		(pts
 			(xy 74.93 152.4) (xy 74.93 156.21)
 		)
 		(stroke
@@ -4234,7 +4089,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 45.72) (xy 36.83 45.72)
+			(xy 31.75 45.72) (xy 36.83 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4444,16 +4299,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 81.28) (xy 76.2 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68755a04-176b-4cff-9cdd-f23cbc57afc1")
-	)
-	(wire
-		(pts
 			(xy 125.73 43.18) (xy 125.73 46.99)
 		)
 		(stroke
@@ -4541,16 +4386,6 @@
 			(type default)
 		)
 		(uuid "7913f61d-a7aa-40d9-b500-ac5cea3e957e")
-	)
-	(wire
-		(pts
-			(xy 105.41 144.78) (xy 109.22 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a4ccb85-5111-45c4-b5f2-d4528df5874b")
 	)
 	(wire
 		(pts
@@ -5134,16 +4969,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 144.78) (xy 97.79 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ded7b4b9-11ff-4843-8608-ecfc161640c7")
-	)
-	(wire
-		(pts
 			(xy 165.1 41.91) (xy 165.1 45.72)
 		)
 		(stroke
@@ -5312,6 +5137,46 @@
 		)
 		(uuid "fcebb53a-6375-46f6-b002-7086ad67780c")
 	)
+	(label "ENET_RX_P"
+		(at 114.3 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "305745b6-f47e-4ac1-acdf-7adeed0666cf")
+	)
+	(label "ENET_TX_N"
+		(at 114.3 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "591ecfb0-ac01-4487-b92e-84be1b0bf6b1")
+	)
+	(label "ENET_RX_N"
+		(at 114.3 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "65cf2627-b37c-4c90-9940-3639e50c2020")
+	)
+	(label "ENET_TX_P"
+		(at 114.3 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7206277e-09eb-4cff-929d-6631056948ac")
+	)
 	(label "ENET_LED_CTRL"
 		(at 261.62 104.14 0)
 		(effects
@@ -5376,7 +5241,7 @@
 		(uuid "329489bb-5ea3-4448-80c0-de6b7ba63c0f")
 	)
 	(hierarchical_label "ENET_CRS_DV"
-		(shape bidirectional)
+		(shape output)
 		(at 59.69 78.74 180)
 		(effects
 			(font
@@ -5397,17 +5262,6 @@
 		)
 		(uuid "3f2770ae-a81b-4016-8e4b-14d18c6cd49f")
 	)
-	(hierarchical_label "ENET_CLK"
-		(shape output)
-		(at 109.22 144.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "74e1171e-6d55-479a-9bde-a0cff4ae0842")
-	)
 	(hierarchical_label "ENET_TXD1"
 		(shape output)
 		(at 59.69 68.58 180)
@@ -5418,6 +5272,17 @@
 			(justify right)
 		)
 		(uuid "78cd855a-18ff-476c-8378-13f15061ac8b")
+	)
+	(hierarchical_label "ENET_VIN_3V3"
+		(shape input)
+		(at 31.75 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "795722ee-2b3e-4719-8400-cf432d5da480")
 	)
 	(hierarchical_label "ENET_MDC"
 		(shape input)
@@ -5486,7 +5351,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "024ad198-d1f2-48cb-9fd3-a2f1cf11a20c")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR0115"
 			(at 69.85 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -5546,7 +5411,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR060")
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -5564,7 +5429,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "038ae13b-e307-4dea-b4ac-6715376358a1")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR0119"
 			(at 248.92 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -5624,7 +5489,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR075")
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
@@ -5642,7 +5507,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07b251d7-9939-4014-b580-f166dde87804")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR0130"
 			(at 34.29 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -5702,7 +5567,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR087")
+					(reference "#PWR0130")
 					(unit 1)
 				)
 			)
@@ -5720,7 +5585,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09408a28-b699-480f-8efb-65b855d2a5b6")
-		(property "Reference" "C24"
+		(property "Reference" "C42"
 			(at 191.77 48.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5742,7 +5607,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 188.9252 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -5784,7 +5649,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "C24")
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -5802,7 +5667,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0bf8ff53-16eb-4169-afab-156f716724b3")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR0103"
 			(at 118.11 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -5862,7 +5727,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR062")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -5880,7 +5745,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24824f71-b39e-4d9d-84bd-710db1b09f4e")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR0125"
 			(at 93.98 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -5940,7 +5805,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR055")
+					(reference "#PWR0125")
 					(unit 1)
 				)
 			)
@@ -5957,7 +5822,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "24c26998-13f1-4395-9dd4-05972d42b4ec")
-		(property "Reference" "R37"
+		(property "Reference" "R48"
 			(at 64.77 77.724 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5977,7 +5842,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 70.104 77.724 90)
 			(hide yes)
 			(show_name no)
@@ -6019,7 +5884,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R37")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -6037,7 +5902,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "300b718c-9c8a-4146-899e-9e21e17c699d")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR0123"
 			(at 156.21 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -6097,7 +5962,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR076")
+					(reference "#PWR0123")
 					(unit 1)
 				)
 			)
@@ -6115,7 +5980,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "33785c46-d456-4495-98ff-4e0584e41559")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR0118"
 			(at 220.98 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -6175,7 +6040,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR074")
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -6193,7 +6058,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3428df29-66d0-4388-be02-69256a9efa88")
-		(property "Reference" "C23"
+		(property "Reference" "C45"
 			(at 151.13 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6215,7 +6080,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 148.2852 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -6257,7 +6122,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "C23")
+					(reference "C45")
 					(unit 1)
 				)
 			)
@@ -6274,7 +6139,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "36134aa3-f3a8-4d4e-a132-2c3e0b886ef6")
-		(property "Reference" "R26"
+		(property "Reference" "R53"
 			(at 31.75 86.868 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6296,7 +6161,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 37.846 89.154 90)
 			(hide yes)
 			(show_name no)
@@ -6338,7 +6203,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R26")
+					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -6356,7 +6221,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3be552a3-8b54-4aa1-836a-b5c1169ef1fc")
-		(property "Reference" "C25"
+		(property "Reference" "C40"
 			(at 102.87 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6378,7 +6243,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 105.7148 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -6420,7 +6285,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "C25")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -6437,7 +6302,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3d1bae83-2b05-4e14-a9b9-9a2ae44b8d33")
-		(property "Reference" "R35"
+		(property "Reference" "R39"
 			(at 167.64 48.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6459,7 +6324,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 166.116 49.784 90)
 			(hide yes)
 			(show_name no)
@@ -6501,7 +6366,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R35")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -6519,7 +6384,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41ba2d4f-7fb4-4669-a09e-1b8927650442")
-		(property "Reference" "R24"
+		(property "Reference" "R57"
 			(at 62.23 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6541,7 +6406,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 60.706 137.414 90)
 			(hide yes)
 			(show_name no)
@@ -6583,7 +6448,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R24")
+					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -6601,7 +6466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46b7cd98-ff9c-4590-85a9-4554d760539b")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR0117"
 			(at 147.32 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -6661,7 +6526,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR084")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -6679,7 +6544,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46e66b11-2192-416a-b4df-ae812402bf4f")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR0110"
 			(at 125.73 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -6739,7 +6604,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR080")
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -6757,7 +6622,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47e6d9f7-df0f-4546-b71a-f79326ce827d")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR0112"
 			(at 106.68 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -6817,7 +6682,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR086")
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -6835,7 +6700,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48cc18a1-953d-4f6e-b00a-f017f5348faa")
-		(property "Reference" "R28"
+		(property "Reference" "R49"
 			(at 223.52 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6857,7 +6722,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 221.996 81.534 90)
 			(hide yes)
 			(show_name no)
@@ -6899,7 +6764,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R28")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -6916,7 +6781,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "48e3a601-3447-4a43-bcaa-26bfcc64706f")
-		(property "Reference" "D7"
+		(property "Reference" "D12"
 			(at 45.212 105.156 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7002,7 +6867,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "D7")
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -7020,7 +6885,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4cff0ca4-cb0d-4696-8725-c9784ebf2521")
-		(property "Reference" "R27"
+		(property "Reference" "R55"
 			(at 121.92 101.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7042,7 +6907,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 120.396 103.124 90)
 			(hide yes)
 			(show_name no)
@@ -7084,7 +6949,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R27")
+					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -7101,7 +6966,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "533176d0-3461-4606-9820-5b2cdd4a7a5f")
-		(property "Reference" "R32"
+		(property "Reference" "R38"
 			(at 35.56 44.704 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7121,7 +6986,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 40.894 44.704 90)
 			(hide yes)
 			(show_name no)
@@ -7163,7 +7028,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R32")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -7180,7 +7045,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5e4bfbd1-ddfe-4bea-8ccf-77782b7f1020")
-		(property "Reference" "R33"
+		(property "Reference" "R41"
 			(at 128.27 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7202,7 +7067,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 126.746 51.054 90)
 			(hide yes)
 			(show_name no)
@@ -7244,7 +7109,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R33")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -7262,7 +7127,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "605e9a3c-7654-4a89-85ee-7fdfe72769e9")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR0105"
 			(at 83.82 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -7322,7 +7187,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR068")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -7339,7 +7204,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "624e651b-e349-43f7-ac96-2002ca7c9fc1")
-		(property "Reference" "R38"
+		(property "Reference" "R43"
 			(at 64.77 62.484 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7359,7 +7224,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 70.104 62.484 90)
 			(hide yes)
 			(show_name no)
@@ -7401,7 +7266,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R38")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -7419,7 +7284,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "633613bc-9f29-4bce-8220-33631f06b744")
-		(property "Reference" "C14"
+		(property "Reference" "C44"
 			(at 73.66 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7441,7 +7306,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 70.8152 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -7483,7 +7348,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "C14")
+					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -7501,7 +7366,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65caee1c-1f32-4089-9c8b-bea5c13fd981")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR0131"
 			(at 46.99 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -7561,7 +7426,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR088")
+					(reference "#PWR0131")
 					(unit 1)
 				)
 			)
@@ -7578,7 +7443,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "68d1aaee-1d4d-4798-a6e7-8f81296a1636")
-		(property "Reference" "U4"
+		(property "Reference" "U7"
 			(at 98.552 57.658 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7711,7 +7576,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "U4")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -7728,7 +7593,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6d6d7815-8a2d-4de1-ade7-cbcca5497a8c")
-		(property "Reference" "R39"
+		(property "Reference" "R44"
 			(at 64.77 65.024 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7748,7 +7613,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 70.104 65.024 90)
 			(hide yes)
 			(show_name no)
@@ -7790,7 +7655,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R39")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -7807,7 +7672,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6e8d03e3-70f0-49ee-bca1-9788e044c8aa")
-		(property "Reference" "R36"
+		(property "Reference" "R40"
 			(at 177.8 48.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7829,7 +7694,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 176.276 49.784 90)
 			(hide yes)
 			(show_name no)
@@ -7871,7 +7736,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R36")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -7888,7 +7753,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "702fd55c-5df5-4973-a273-3486c5aaee3a")
-		(property "Reference" "R40"
+		(property "Reference" "R45"
 			(at 64.77 67.564 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7908,7 +7773,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 70.104 67.564 90)
 			(hide yes)
 			(show_name no)
@@ -7950,7 +7815,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R40")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -7968,7 +7833,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74ce01db-e6fd-482f-8c35-d8336ef02603")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR0109"
 			(at 175.26 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -8028,7 +7893,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR083")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -8045,7 +7910,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "79a26c59-458b-4300-99bb-c7e37b253b1b")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR0120"
 			(at 36.83 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -8105,7 +7970,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR072")
+					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
@@ -8123,7 +7988,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a587199-a77d-4367-a466-f0dd980ad2bd")
-		(property "Reference" "R29"
+		(property "Reference" "R50"
 			(at 232.41 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8145,7 +8010,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 230.886 81.534 90)
 			(hide yes)
 			(show_name no)
@@ -8187,7 +8052,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R29")
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -8205,7 +8070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f6bcc18-0489-4bbd-88e1-402fd9bc6e25")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR0116"
 			(at 187.96 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -8265,7 +8130,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR085")
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -8367,7 +8232,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "83a6492e-81ca-49ef-9faf-2591ee858d11")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR0129"
 			(at 59.69 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -8427,7 +8292,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR069")
+					(reference "#PWR0129")
 					(unit 1)
 				)
 			)
@@ -8445,7 +8310,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "868de066-171c-4904-81f3-287edf287f87")
-		(property "Reference" "C12"
+		(property "Reference" "C43"
 			(at 60.96 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8467,7 +8332,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 58.1152 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -8509,7 +8374,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "C12")
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -8526,7 +8391,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9c388a44-68ff-48cc-8a04-0c685dda4c97")
-		(property "Reference" "C22"
+		(property "Reference" "C47"
 			(at 167.132 108.458 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8548,7 +8413,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 167.3352 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -8590,7 +8455,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "C22")
+					(reference "C47")
 					(unit 1)
 				)
 			)
@@ -8608,7 +8473,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e9157eb-9d9f-4bac-9df8-2c961cc788ca")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR0114"
 			(at 57.15 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -8668,7 +8533,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR059")
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
@@ -8686,7 +8551,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a212bed4-89f5-475e-aa3e-a18344fbdd45")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR0107"
 			(at 53.34 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -8746,7 +8611,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR056")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -8763,7 +8628,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a5a46ae8-9149-4e6e-938b-3536a3bfd8c9")
-		(property "Reference" "TP4"
+		(property "Reference" "TP11"
 			(at 83.82 148.336 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8776,6 +8641,7 @@
 		)
 		(property "Value" "ENET_CLK_TP"
 			(at 90.424 148.336 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8785,7 +8651,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
 			(at 83.82 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -8824,7 +8690,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "TP4")
+					(reference "TP11")
 					(unit 1)
 				)
 			)
@@ -8841,7 +8707,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a5c83892-dbd7-4023-8789-672f7d8e9101")
-		(property "Reference" "R44"
+		(property "Reference" "R54"
 			(at 38.1 86.868 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8863,7 +8729,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 44.196 89.154 90)
 			(hide yes)
 			(show_name no)
@@ -8905,7 +8771,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R44")
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -8922,7 +8788,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a9a805b7-737c-428f-b293-3690bf686701")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR0128"
 			(at 50.8 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -8982,7 +8848,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR071")
+					(reference "#PWR0128")
 					(unit 1)
 				)
 			)
@@ -9000,7 +8866,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac85a639-ec2a-461f-a366-043d6ddedd6b")
-		(property "Reference" "R31"
+		(property "Reference" "R51"
 			(at 261.62 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9022,7 +8888,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 260.096 81.534 90)
 			(hide yes)
 			(show_name no)
@@ -9064,7 +8930,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R31")
+					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -9082,7 +8948,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af436208-bab2-4533-882f-af0f9afce0f0")
-		(property "Reference" "R30"
+		(property "Reference" "R52"
 			(at 251.46 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9104,7 +8970,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 249.936 82.804 90)
 			(hide yes)
 			(show_name no)
@@ -9146,7 +9012,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R30")
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -9164,7 +9030,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3e2718b-a539-491d-a292-273bc7ec2de4")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR0113"
 			(at 118.11 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -9224,7 +9090,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR061")
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
@@ -9241,7 +9107,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b71ea398-d2b7-4456-a852-f9d9f0a6a34a")
-		(property "Reference" "L4"
+		(property "Reference" "L6"
 			(at 61.976 25.4 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9303,7 +9169,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "L4")
+					(reference "L6")
 					(unit 1)
 				)
 			)
@@ -9321,7 +9187,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b955950f-993f-4f23-9f90-7fa5f5ea285e")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR0122"
 			(at 119.38 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -9381,7 +9247,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR073")
+					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
@@ -9399,7 +9265,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "be7c0979-39e6-4dfb-b896-2980df6043ca")
-		(property "Reference" "C13"
+		(property "Reference" "C41"
 			(at 114.3 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9421,7 +9287,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 117.1448 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -9463,86 +9329,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 101.6 144.78 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c0fc4bfc-2051-40e3-b8ef-f87b0c37251d")
-		(property "Reference" "R43"
-			(at 96.52 143.764 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "33R_NC"
-			(at 105.41 143.764 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.854 143.764 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 101.6 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "711899c9-b2c8-4ea3-b120-2b11a0a26e40")
-		)
-		(pin "1"
-			(uuid "dab160ab-93c0-4ab5-a871-cf47a7f4fc3a")
-		)
-		(instances
-			(project "UWB_Positioning_Terminal"
-				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R43")
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -9560,7 +9347,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c31ddeb6-2c4a-4993-9005-868a7c763dde")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR0111"
 			(at 135.89 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -9620,7 +9407,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR081")
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -9637,7 +9424,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c404b622-41e5-49e4-9c2a-ea73712162d2")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR0121"
 			(at 50.8 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -9697,7 +9484,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR070")
+					(reference "#PWR0121")
 					(unit 1)
 				)
 			)
@@ -9715,7 +9502,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7050837-fb32-4f2b-8038-f8ab169fb4a2")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR0132"
 			(at 74.93 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -9775,7 +9562,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR054")
+					(reference "#PWR0132")
 					(unit 1)
 				)
 			)
@@ -9793,7 +9580,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c72a22fb-1d94-4ef9-8f2e-40d7a3065ab8")
-		(property "Reference" "J4"
+		(property "Reference" "J5"
 			(at 194.31 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9888,7 +9675,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "J4")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -9906,7 +9693,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c76dfa46-e0e9-482b-bff8-358f6ac56b99")
-		(property "Reference" "R25"
+		(property "Reference" "R56"
 			(at 53.34 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9928,7 +9715,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 51.816 108.204 90)
 			(hide yes)
 			(show_name no)
@@ -9970,7 +9757,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R25")
+					(reference "R56")
 					(unit 1)
 				)
 			)
@@ -9987,7 +9774,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cd06e3c7-114a-41fa-98cd-e1b4dcb3a040")
-		(property "Reference" "R42"
+		(property "Reference" "R47"
 			(at 64.77 75.184 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10007,7 +9794,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 70.104 75.184 90)
 			(hide yes)
 			(show_name no)
@@ -10049,84 +9836,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 27.94 39.37 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ce919ce8-435d-4b09-b64d-518799448544")
-		(property "Reference" "#PWR057"
-			(at 27.94 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BASE_3V3"
-			(at 27.432 35.052 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 27.94 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0b0ca0b6-dc02-4c22-9368-4b7b27a2ff8b")
-		)
-		(instances
-			(project "UWB_Positioning_Terminal"
-				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR057")
+					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -10144,7 +9854,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d52bdd3d-27ff-4248-84d4-b54d901d7b07")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR0104"
 			(at 72.39 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -10204,83 +9914,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR067")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 59.69 81.28 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d56e8d2d-a222-404b-ab01-e4dce11af786")
-		(property "Reference" "TP5"
-			(at 53.086 81.28 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 62.484 80.264 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 59.69 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0f43589c-7ac8-4d0d-86fe-6fa2d22e4dc4")
-		)
-		(instances
-			(project "UWB_Positioning_Terminal"
-				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "TP5")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -10298,7 +9932,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d798483a-8f2a-443e-9db9-16a802ee1f7d")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR0124"
 			(at 166.37 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -10358,7 +9992,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR077")
+					(reference "#PWR0124")
 					(unit 1)
 				)
 			)
@@ -10375,7 +10009,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dfc6b512-f63e-40ad-8f4b-6021abb26734")
-		(property "Reference" "R41"
+		(property "Reference" "R46"
 			(at 64.77 72.644 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10395,7 +10029,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 70.104 72.644 90)
 			(hide yes)
 			(show_name no)
@@ -10437,7 +10071,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R41")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -10455,7 +10089,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e2e3add3-281e-4cd4-aa69-8d73e6f91601")
-		(property "Reference" "C26"
+		(property "Reference" "C50"
 			(at 50.8 137.1599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10477,7 +10111,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 47.9552 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -10519,7 +10153,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "C26")
+					(reference "C50")
 					(unit 1)
 				)
 			)
@@ -10537,7 +10171,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3a6a918-0725-4cca-a30e-6a7071dbcb44")
-		(property "Reference" "C27"
+		(property "Reference" "C49"
 			(at 38.1 137.1599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10559,7 +10193,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 35.2552 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -10601,7 +10235,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "C27")
+					(reference "C49")
 					(unit 1)
 				)
 			)
@@ -10619,7 +10253,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e843f682-2533-4ff7-a01b-c014379b258e")
-		(property "Reference" "C20"
+		(property "Reference" "C48"
 			(at 54.61 119.3799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10641,7 +10275,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 51.7652 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -10683,7 +10317,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "C20")
+					(reference "C48")
 					(unit 1)
 				)
 			)
@@ -10700,7 +10334,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ebf4b20c-d193-493b-b2ba-fa0ab6334da1")
-		(property "Reference" "C19"
+		(property "Reference" "C39"
 			(at 85.09 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10722,7 +10356,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 84.7852 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -10764,7 +10398,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "C19")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -10781,7 +10415,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eec3e42e-e383-4364-bc46-0a75494e3847")
-		(property "Reference" "R34"
+		(property "Reference" "R42"
 			(at 138.43 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10803,7 +10437,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 136.906 51.054 90)
 			(hide yes)
 			(show_name no)
@@ -10845,7 +10479,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R34")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -10863,7 +10497,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2800655-7841-46b5-80c0-a978102ccf3b")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR0127"
 			(at 208.28 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -10923,7 +10557,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR079")
+					(reference "#PWR0127")
 					(unit 1)
 				)
 			)
@@ -10940,7 +10574,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f3274ff8-f7e7-487d-a0a0-f14622a67b7b")
-		(property "Reference" "C21"
+		(property "Reference" "C46"
 			(at 157.226 108.458 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10962,7 +10596,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 157.1752 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -11004,7 +10638,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "C21")
+					(reference "C46")
 					(unit 1)
 				)
 			)
@@ -11022,7 +10656,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3d6a4f0-405e-4d25-88ca-561c70b29387")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR0126"
 			(at 203.2 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -11082,7 +10716,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR078")
+					(reference "#PWR0126")
 					(unit 1)
 				)
 			)
@@ -11099,7 +10733,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f4f4410a-a549-4014-8959-e78becbe4aa1")
-		(property "Reference" "C15"
+		(property "Reference" "C38"
 			(at 74.676 30.988 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11121,7 +10755,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 73.3552 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -11163,7 +10797,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "C15")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -11181,7 +10815,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7bb3ac0-88d3-4d4c-a46e-204e6b8aeea7")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR0102"
 			(at 58.42 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -11241,7 +10875,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR058")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -11259,7 +10893,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa77c2a8-b216-4e64-ba04-5cbcfcb71da2")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR0108"
 			(at 165.1 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -11319,7 +10953,7 @@
 		(instances
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "#PWR082")
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
