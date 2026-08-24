@@ -1461,309 +1461,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Push_Dual"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 0 7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_Push_Dual"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Push button switch, generic, symbol, four pins"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SW_Push_Dual_0_1"
-				(circle
-					(center -2.032 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.032 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.81) (xy 0 5.588)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.048) (xy 0 3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.032) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.016) (xy 0 1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.508) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.508) (xy 0 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 3.81) (xy -2.54 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -1.27) (xy -2.54 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "SW_Push_Dual_1_1"
-				(rectangle
-					(start -3.175 5.715)
-					(end 3.175 -4.445)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Transistor_BJT:S8050"
 			(pin_names
 				(offset 0)
@@ -2223,6 +1920,309 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "UPT:SW_Push_Dual"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_Push_Dual"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "UPT:SW-TH_4P-L6.0-W6.0-P4.50-LS6.5"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Push button switch, generic, symbol, four pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Push_Dual_0_1"
+				(circle
+					(center -2.032 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.032 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.81) (xy 0 5.588)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.048) (xy 0 3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.032) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.016) (xy 0 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.508) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.508) (xy 0 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 3.81) (xy -2.54 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.27) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "SW_Push_Dual_1_1"
+				(rectangle
+					(start -3.175 5.715)
+					(end 3.175 -4.445)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power global)
 			(pin_numbers
@@ -2477,6 +2477,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 144.78 101.6)
@@ -2638,12 +2753,6 @@
 		(uuid "703c9791-001c-45e2-851d-f699b9026962")
 	)
 	(junction
-		(at 229.87 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "73f33a19-0669-4eb1-8d8d-282d9ce8d543")
-	)
-	(junction
 		(at 60.96 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2680,16 +2789,16 @@
 		(uuid "8dd20ef5-1f20-4a34-a387-ab91a398aaa7")
 	)
 	(junction
-		(at 229.87 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ab72677d-e5fe-47ba-b5d5-a9599b22a0b6")
-	)
-	(junction
 		(at 127 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cbad5675-315d-44b8-9754-c030dbffbdf9")
+	)
+	(junction
+		(at 229.87 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e22ebc8c-a6d4-4425-8c60-620c761cd859")
 	)
 	(junction
 		(at 99.06 134.62)
@@ -2702,6 +2811,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e4722d33-89cb-4d90-b5e5-04c13dfc6f5a")
+	)
+	(junction
+		(at 229.87 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e760b4c9-459a-4f78-8c1f-02787696aa55")
 	)
 	(junction
 		(at 215.9 137.16)
@@ -2719,7 +2834,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 31.75) (xy 229.87 33.02)
+			(xy 229.87 26.67) (xy 229.87 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2809,6 +2924,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 40.64) (xy 229.87 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fad89d9-34c9-42d9-8a15-a8f96ba1229e")
+	)
+	(wire
+		(pts
 			(xy 26.67 123.19) (xy 26.67 132.08)
 		)
 		(stroke
@@ -2876,6 +3001,16 @@
 			(type default)
 		)
 		(uuid "3798f8df-b5cf-423e-aa27-a05bdc55a556")
+	)
+	(wire
+		(pts
+			(xy 229.87 38.1) (xy 229.87 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e4d3ed7-0903-4157-a781-4969d9a8631c")
 	)
 	(wire
 		(pts
@@ -3049,7 +3184,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 33.02) (xy 220.98 34.29)
+			(xy 220.98 29.21) (xy 220.98 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3119,7 +3254,17 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 25.4) (xy 40.64 27.94)
+			(xy 229.87 40.64) (xy 229.87 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ce49a59-6f95-4525-992b-19f0d3654842")
+	)
+	(wire
+		(pts
+			(xy 40.64 25.4) (xy 40.64 29.21)
 		)
 		(stroke
 			(width 0)
@@ -3179,7 +3324,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 41.91) (xy 220.98 43.18)
+			(xy 220.98 39.37) (xy 220.98 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3189,7 +3334,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 27.94) (xy 40.64 27.94)
+			(xy 31.75 29.21) (xy 40.64 29.21)
 		)
 		(stroke
 			(width 0)
@@ -3206,16 +3351,6 @@
 			(type default)
 		)
 		(uuid "97654838-24f0-4be2-b9cd-4965ef5ee2a7")
-	)
-	(wire
-		(pts
-			(xy 220.98 43.18) (xy 229.87 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97bc1ab2-dc0a-4bff-b63a-534a5abaea6e")
 	)
 	(wire
 		(pts
@@ -3246,6 +3381,16 @@
 			(type default)
 		)
 		(uuid "a762edb3-9a7e-4776-a686-659966acb903")
+	)
+	(wire
+		(pts
+			(xy 229.87 29.21) (xy 229.87 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8dcb35e-0459-4e37-89de-3346c44c624e")
 	)
 	(wire
 		(pts
@@ -3306,16 +3451,6 @@
 			(type default)
 		)
 		(uuid "b9386db4-128c-40d9-9dc7-4aea466252e8")
-	)
-	(wire
-		(pts
-			(xy 229.87 41.91) (xy 229.87 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b98c7a0c-281c-4de8-bb7a-714cec668644")
 	)
 	(wire
 		(pts
@@ -3479,7 +3614,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 33.02) (xy 220.98 33.02)
+			(xy 229.87 29.21) (xy 220.98 29.21)
 		)
 		(stroke
 			(width 0)
@@ -3556,16 +3691,6 @@
 			(type default)
 		)
 		(uuid "f23560c9-24f8-48c5-9f18-b2abc972cd1d")
-	)
-	(wire
-		(pts
-			(xy 229.87 33.02) (xy 229.87 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3ec08d5-9d6e-468d-85d0-d140e569aede")
 	)
 	(wire
 		(pts
@@ -3647,6 +3772,17 @@
 			(justify right)
 		)
 		(uuid "0bf99148-f0b1-4363-8a9e-8072d4885543")
+	)
+	(hierarchical_label "BASE_3V3"
+		(shape input)
+		(at 31.75 29.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "18a098bb-4699-42f1-a6ee-a02640b52ced")
 	)
 	(hierarchical_label "DEBUG_UART_TX"
 		(shape input)
@@ -3746,17 +3882,6 @@
 			(justify right)
 		)
 		(uuid "9b2e3fcb-88e1-43c9-a105-8e467fce3c8d")
-	)
-	(hierarchical_label "BASE_3V3"
-		(shape input)
-		(at 31.75 27.94 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c9f35cb1-d11f-4e42-82c4-ac131e0224a8")
 	)
 	(hierarchical_label "RESET"
 		(shape output)
@@ -3901,91 +4026,6 @@
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/2504c941-065f-4d34-a170-f33ab3525ead"
 					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_Dual")
-		(at 40.64 44.45 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "16a610d2-8666-4d85-bdad-c67bce12b3c8")
-		(property "Reference" "SW2"
-			(at 34.798 39.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RESET"
-			(at 53.34 44.958 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 40.64 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, symbol, four pins"
-			(at 40.64 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "fb9d5bc9-fd4c-4e0b-978b-c9026db87627")
-		)
-		(pin "1"
-			(uuid "99437ba6-4c20-4245-a358-4084036d1ade")
-		)
-		(pin "4"
-			(uuid "a645f4af-c394-4a05-972e-3846140e75e6")
-		)
-		(pin "2"
-			(uuid "de7bcbf8-77a5-4134-a337-617421abcb1a")
-		)
-		(instances
-			(project "UWB_Positioning_Terminal"
-				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/2504c941-065f-4d34-a170-f33ab3525ead"
-					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -4985,7 +5025,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
 			(at 129.54 136.525 0)
 			(hide yes)
 			(show_name no)
@@ -5056,6 +5096,85 @@
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/2504c941-065f-4d34-a170-f33ab3525ead"
 					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 229.87 40.64 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b70cb25-fed3-483d-8e10-6f252e7e0ce6")
+		(property "Reference" "#FLG016"
+			(at 231.775 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 233.68 40.6399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 229.87 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b52a4bca-1aaf-48c3-bd80-7dfbb2635c13")
+		)
+		(instances
+			(project "UWB_Positioning_Terminal"
+				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/2504c941-065f-4d34-a170-f33ab3525ead"
+					(reference "#FLG016")
 					(unit 1)
 				)
 			)
@@ -5255,7 +5374,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 77.724 39.116 90)
 			(hide yes)
 			(show_name no)
@@ -5626,7 +5745,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 229.87 31.75 0)
+		(at 229.87 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5636,7 +5755,7 @@
 		(dnp no)
 		(uuid "b45e0c90-5eb5-4df0-baf3-71061f4a2265")
 		(property "Reference" "#PWR0134"
-			(at 229.87 35.56 0)
+			(at 229.87 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5647,7 +5766,7 @@
 			)
 		)
 		(property "Value" "BASE_3V3"
-			(at 229.362 27.432 0)
+			(at 229.362 22.352 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5657,7 +5776,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 229.87 31.75 0)
+			(at 229.87 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5668,7 +5787,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 31.75 0)
+			(at 229.87 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5679,7 +5798,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 229.87 31.75 0)
+			(at 229.87 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6203,7 +6322,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 220.98 38.1 0)
+		(at 220.98 35.56 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -6214,7 +6333,7 @@
 		(dnp no)
 		(uuid "d2f49b3e-dc5b-4478-acd3-90b29220c76b")
 		(property "Reference" "R58"
-			(at 218.44 36.8299 0)
+			(at 218.44 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6225,7 +6344,7 @@
 			)
 		)
 		(property "Value" "0R_NC"
-			(at 218.44 39.3699 0)
+			(at 218.44 36.8299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6236,7 +6355,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 219.964 38.354 90)
+			(at 219.964 35.814 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6247,7 +6366,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 38.1 0)
+			(at 220.98 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6258,7 +6377,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 220.98 38.1 0)
+			(at 220.98 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6439,6 +6558,92 @@
 		)
 	)
 	(symbol
+		(lib_id "UPT:SW_Push_Dual")
+		(at 40.64 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "decaa74b-3806-43b3-853e-4a272a1a1bbd")
+		(property "Reference" "SW2"
+			(at 40.64 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_Dual"
+			(at 40.64 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "UPT:SW-TH_4P-L6.0-W6.0-P4.50-LS6.5"
+			(at 40.64 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, symbol, four pins"
+			(at 40.64 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "40478f11-0ad4-4e2d-9c27-ee66893f4045")
+		)
+		(pin "3"
+			(uuid "c30f68aa-277a-4d7a-93bf-ac2c6410d4f9")
+		)
+		(pin "4"
+			(uuid "a8a796ce-e69c-48fd-9325-98c1b956f97d")
+		)
+		(pin "1"
+			(uuid "24a64758-8593-4294-8f37-a7bb8e2f6222")
+		)
+		(instances
+			(project "UWB_Positioning_Terminal"
+				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/2504c941-065f-4d34-a170-f33ab3525ead"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 22.86 54.61 0)
 		(unit 1)
@@ -6518,7 +6723,7 @@
 	)
 	(symbol
 		(lib_id "Diode:MBR0520LT")
-		(at 229.87 38.1 270)
+		(at 229.87 34.29 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -6530,7 +6735,7 @@
 		(fields_autoplaced yes)
 		(uuid "e7f07afb-f804-4e5d-ad12-b4ad74c59e51")
 		(property "Reference" "D13"
-			(at 232.41 37.1474 90)
+			(at 232.41 33.3374 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6541,7 +6746,7 @@
 			)
 		)
 		(property "Value" "MBR0520LT"
-			(at 232.41 39.6874 90)
+			(at 232.41 35.8774 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6552,7 +6757,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 225.425 38.1 0)
+			(at 225.425 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6563,7 +6768,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/MBR0520LT1-D.PDF"
-			(at 229.87 38.1 0)
+			(at 229.87 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6574,7 +6779,7 @@
 			)
 		)
 		(property "Description" "20V 0.5A Schottky Power Rectifier Diode, SOD-123"
-			(at 229.87 38.1 0)
+			(at 229.87 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

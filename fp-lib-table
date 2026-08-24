@@ -1,4 +1,5 @@
 (fp_lib_table
 	(version 7)
 	(lib (name "UPT") (type "KiCad") (uri "${KIPRJMOD}/libs/footprints/UPT.pretty") (options "") (descr ""))
+	(lib (name "yh_design") (type "KiCad") (uri "D:/WorkSpace/KicadLib/yh_design.pretty") (options "") (descr ""))
 )

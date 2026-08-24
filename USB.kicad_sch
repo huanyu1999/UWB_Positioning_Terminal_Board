@@ -2350,6 +2350,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:VCC"
 			(power global)
 			(pin_numbers
@@ -2582,6 +2697,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 93.98) (xy 224.79 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fcbeb15-5112-4c36-b350-b3435b6104e1")
+	)
+	(wire
+		(pts
 			(xy 137.16 76.2) (xy 147.32 76.2)
 		)
 		(stroke
@@ -2589,16 +2714,6 @@
 			(type default)
 		)
 		(uuid "2b79d8c9-7070-4422-bac7-e912d9aff4d3")
-	)
-	(wire
-		(pts
-			(xy 152.4 86.36) (xy 168.91 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39f2effb-a82b-4a99-8579-3f741efb596e")
 	)
 	(wire
 		(pts
@@ -2612,6 +2727,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 88.9) (xy 224.79 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4017ff42-a29d-4341-917e-7f409f79b8ce")
+	)
+	(wire
+		(pts
 			(xy 127 88.9) (xy 127 91.44)
 		)
 		(stroke
@@ -2622,7 +2747,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 91.44) (xy 142.24 91.44)
+			(xy 127 91.44) (xy 173.99 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2662,7 +2787,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 91.44) (xy 191.77 91.44)
+			(xy 184.15 93.98) (xy 193.04 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2689,16 +2814,6 @@
 			(type default)
 		)
 		(uuid "75e1f012-8af0-4cc0-9683-65e4c57c7b92")
-	)
-	(wire
-		(pts
-			(xy 152.4 91.44) (xy 173.99 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77983580-de13-4a5f-b2ea-dca9eb06c8ad")
 	)
 	(wire
 		(pts
@@ -2732,7 +2847,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 86.36) (xy 142.24 86.36)
+			(xy 127 86.36) (xy 168.91 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2822,7 +2937,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 88.9) (xy 191.77 88.9)
+			(xy 184.15 88.9) (xy 193.04 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2882,6 +2997,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 93.98) (xy 184.15 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f87c5af9-87ec-4239-aa4c-496d1d415fa0")
+	)
+	(wire
+		(pts
 			(xy 168.91 88.9) (xy 173.99 88.9)
 		)
 		(stroke
@@ -2890,9 +3015,29 @@
 		)
 		(uuid "fee8fba2-902c-4384-a88f-c50a89493ae9")
 	)
+	(label "USB_DEVICE_P"
+		(at 128.27 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "103a4439-187b-4e8e-8c86-bb54d6d593fb")
+	)
+	(label "USB_DEVICE_N"
+		(at 128.27 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "50e2ef77-0dcd-4ded-8be9-750024382c5b")
+	)
 	(hierarchical_label "USB_OTG1_DP"
 		(shape bidirectional)
-		(at 191.77 91.44 0)
+		(at 224.79 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2914,7 +3059,7 @@
 	)
 	(hierarchical_label "USB_OTG1_DN"
 		(shape bidirectional)
-		(at 191.77 88.9 0)
+		(at 224.79 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2922,91 +3067,6 @@
 			(justify left)
 		)
 		(uuid "b8a8935e-d85e-4fc1-b8ea-b87de5e2d505")
-	)
-	(symbol
-		(lib_id "Device:Filter_EMI_CommonMode")
-		(at 147.32 88.9 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "07d39a9c-e1a0-49c8-a442-ada7716218fb")
-		(property "Reference" "FL1"
-			(at 143.51 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DLW21SN900SQ2L"
-			(at 158.242 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 147.32 89.916 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.32 89.916 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "EMI 2-inductor common mode filter"
-			(at 147.32 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "6ef674e3-b4df-4f00-8f9a-40f4edf9c1bf")
-		)
-		(pin "3"
-			(uuid "b6a267c7-5dd4-4704-9a2a-9a91d6373bf6")
-		)
-		(pin "1"
-			(uuid "6dade8bb-c177-4441-acfe-dfc8e984f548")
-		)
-		(pin "4"
-			(uuid "b88c7a6d-4b97-4abf-bd48-93604e5f2fd9")
-		)
-		(instances
-			(project "UWB_Positioning_Terminal"
-				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
-					(reference "FL1")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -3080,6 +3140,83 @@
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
 					(reference "#PWR097")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 137.16 71.12 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "45935b8b-2900-494d-8e4a-3e7be2daebbb")
+		(property "Reference" "#FLG06"
+			(at 137.16 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 143.256 74.422 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 137.16 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dff3e103-1920-41cc-af1a-50863030bf0d")
+		)
+		(instances
+			(project "UWB_Positioning_Terminal"
+				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -3279,8 +3416,8 @@
 				)
 			)
 		)
-		(property "Value" "600 Ohm @ 100MHz,1A"
-			(at 124.206 68.326 90)
+		(property "Value" "600 Ohm @ 100MHz,MPZ2012S601AT000"
+			(at 111.252 65.024 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3289,7 +3426,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
 			(at 128.27 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -3768,6 +3905,91 @@
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
 					(reference "#PWR0100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Filter_EMI_CommonMode")
+		(at 198.12 91.44 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f0069299-e841-4270-aebe-896205260c5c")
+		(property "Reference" "FL1"
+			(at 194.31 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DLW21SN900SQ2L"
+			(at 209.042 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "UPT:DLW21SN121HQ2L"
+			(at 198.12 92.456 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 92.456 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "EMI 2-inductor common mode filter"
+			(at 198.12 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0179b5ee-b6b6-4ae6-8653-541c567625f2")
+		)
+		(pin "3"
+			(uuid "b3b3c736-517f-4d5b-95f5-e7650f8a46ba")
+		)
+		(pin "1"
+			(uuid "1093c4e0-975f-4026-9c68-a1a3d80570bc")
+		)
+		(pin "4"
+			(uuid "969d6068-c340-4362-b9b8-4ef8afd8d632")
+		)
+		(instances
+			(project "UWB_Positioning_Terminal"
+				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/7163e9df-074e-4c31-a360-732920c23810"
+					(reference "FL1")
 					(unit 1)
 				)
 			)

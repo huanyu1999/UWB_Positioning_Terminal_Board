@@ -3485,6 +3485,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 14.478 17.526)
@@ -3520,6 +3635,12 @@
 		(uuid "0040f651-45c7-4291-b1d2-597c09150fd9")
 	)
 	(junction
+		(at 93.98 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12c82f6c-41c6-45fa-bf9b-89757d07c162")
+	)
+	(junction
 		(at 259.08 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3530,12 +3651,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "18988628-2bd0-4567-8a3e-3a89b762f852")
-	)
-	(junction
-		(at 125.73 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "25d3cc8a-54eb-4ef7-ab70-73952ef8228d")
 	)
 	(junction
 		(at 118.11 36.83)
@@ -3590,12 +3705,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b40e8b06-1292-4120-8f26-4bd4910e612b")
-	)
-	(junction
-		(at 165.1 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "be57b7ee-a3bd-418b-9e8d-019ed33103b5")
 	)
 	(junction
 		(at 248.92 74.93)
@@ -3776,16 +3885,6 @@
 			(type default)
 		)
 		(uuid "09c306cf-9d5e-411a-8e0d-a3b4486b9f5d")
-	)
-	(wire
-		(pts
-			(xy 165.1 39.37) (xy 165.1 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0bac50ce-acd3-450b-a4e6-0cb958af65f5")
 	)
 	(wire
 		(pts
@@ -4089,7 +4188,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 45.72) (xy 36.83 45.72)
+			(xy 31.75 45.72) (xy 53.34 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4119,7 +4218,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 91.44) (xy 124.46 91.44)
+			(xy 111.76 91.44) (xy 127 91.44)
 		)
 		(stroke
 			(width 0)
@@ -4299,7 +4398,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 43.18) (xy 125.73 46.99)
+			(xy 125.73 40.64) (xy 125.73 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4326,6 +4425,16 @@
 			(type default)
 		)
 		(uuid "6c14af71-a627-4172-bbd7-ca12840c19ec")
+	)
+	(wire
+		(pts
+			(xy 105.41 144.78) (xy 111.76 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fe20608-30c8-404f-b978-f16e23d77834")
 	)
 	(wire
 		(pts
@@ -4386,16 +4495,6 @@
 			(type default)
 		)
 		(uuid "7913f61d-a7aa-40d9-b500-ac5cea3e957e")
-	)
-	(wire
-		(pts
-			(xy 125.73 43.18) (xy 135.89 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b5d6337-8a3b-43f5-ae36-76738990d443")
 	)
 	(wire
 		(pts
@@ -4589,16 +4688,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 45.72) (xy 53.34 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3bbd839-acec-446a-82a9-12ad52b3a8ae")
-	)
-	(wire
-		(pts
 			(xy 57.15 45.72) (xy 69.85 45.72)
 		)
 		(stroke
@@ -4626,6 +4715,16 @@
 			(type default)
 		)
 		(uuid "a7a0cd4a-5263-4cf8-8d23-94dc8f4e7d86")
+	)
+	(wire
+		(pts
+			(xy 93.98 31.75) (xy 93.98 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a98addb7-15de-453f-a633-038cd885bd19")
 	)
 	(wire
 		(pts
@@ -4669,7 +4768,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 27.94) (xy 93.98 58.42)
+			(xy 93.98 27.94) (xy 93.98 31.75)
 		)
 		(stroke
 			(width 0)
@@ -4696,6 +4795,16 @@
 			(type default)
 		)
 		(uuid "af53e7c0-1bef-42cf-96ed-4705b872f047")
+	)
+	(wire
+		(pts
+			(xy 53.34 39.37) (xy 53.34 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4645927-c1e8-4299-8a57-57a5c527bd25")
 	)
 	(wire
 		(pts
@@ -4779,6 +4888,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 144.78) (xy 97.79 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0948d8e-3649-488a-b7ee-626cba5d2508")
+	)
+	(wire
+		(pts
 			(xy 165.1 76.2) (xy 151.13 76.2)
 		)
 		(stroke
@@ -4799,16 +4918,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 41.91) (xy 175.26 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c531489b-6e07-4420-8893-04d7a399ca55")
-	)
-	(wire
-		(pts
 			(xy 96.52 36.83) (xy 106.68 36.83)
 		)
 		(stroke
@@ -4816,16 +4925,6 @@
 			(type default)
 		)
 		(uuid "c8487478-34bc-442c-9a4a-e46e1dea532c")
-	)
-	(wire
-		(pts
-			(xy 125.73 40.64) (xy 125.73 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c95170e6-c71f-4208-89da-55accf547a54")
 	)
 	(wire
 		(pts
@@ -4959,17 +5058,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 39.37) (xy 53.34 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de974971-b645-47b0-889f-97f014517fff")
-	)
-	(wire
-		(pts
-			(xy 165.1 41.91) (xy 165.1 45.72)
+			(xy 165.1 39.37) (xy 165.1 45.72)
 		)
 		(stroke
 			(width 0)
@@ -5305,6 +5394,17 @@
 			(justify right)
 		)
 		(uuid "dd9255dc-edb1-4223-b39e-f4bf8ce1a993")
+	)
+	(hierarchical_label "ENET_CLK"
+		(shape output)
+		(at 111.76 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "efed3055-4b9e-48d6-b3de-ec4cfaa62107")
 	)
 	(hierarchical_label "ENET_RXD1"
 		(shape input)
@@ -6161,7 +6261,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 37.846 89.154 90)
 			(hide yes)
 			(show_name no)
@@ -6803,7 +6903,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 44.45 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -6868,6 +6968,85 @@
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
 					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 101.6 144.78 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "494fee1b-0fd2-4748-a4fa-1b95295dc8d9")
+		(property "Reference" "R94"
+			(at 96.52 143.764 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33R"
+			(at 105.41 143.764 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 101.854 143.764 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 101.6 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0773d29b-5f42-4002-a885-89fc19373de0")
+		)
+		(pin "1"
+			(uuid "9ec9c86c-3cec-484c-8b7b-9c1ee513bbf8")
+		)
+		(instances
+			(project "UWB_Positioning_Terminal"
+				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
+					(reference "R94")
 					(unit 1)
 				)
 			)
@@ -6950,85 +7129,6 @@
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
 					(reference "R55")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 40.64 45.72 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "533176d0-3461-4606-9820-5b2cdd4a7a5f")
-		(property "Reference" "R38"
-			(at 35.56 44.704 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 44.45 44.704 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 40.894 44.704 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 40.64 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 40.64 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f5c2c038-99e9-439b-a171-932ff1d7c850")
-		)
-		(pin "1"
-			(uuid "829bc23c-91de-4938-b3d4-562d81b41f80")
-		)
-		(instances
-			(project "UWB_Positioning_Terminal"
-				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
-					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -8651,7 +8751,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 83.82 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -8729,7 +8829,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 44.196 89.154 90)
 			(hide yes)
 			(show_name no)
@@ -9117,8 +9217,8 @@
 				)
 			)
 		)
-		(property "Value" "120 Ohm @100MHz"
-			(at 76.2 25.4 90)
+		(property "Value" "120 Ohm @100MHz BLM18PG121SN1D"
+			(at 87.122 26.416 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9127,7 +9227,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 64.77 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -9287,7 +9387,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 117.1448 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -9600,7 +9700,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_RJ:RJ45_Hanrun_HR911105A_Horizontal"
+		(property "Footprint" "UPT:RJ45-TH_HR911105A"
 			(at 193.04 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -10072,6 +10172,85 @@
 			(project "UWB_Positioning_Terminal"
 				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
 					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 93.98 31.75 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e0eb136b-5938-4105-8a82-2c96360a96a7")
+		(property "Reference" "#FLG012"
+			(at 95.885 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 97.79 31.7499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 93.98 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d50b3574-2b17-45e3-a34c-91cd296f2c7e")
+		)
+		(instances
+			(project "UWB_Positioning_Terminal"
+				(path "/b9bb75c4-3ddc-4c63-9df8-68118c9082ef/1164932c-8f56-4625-b165-09bad2d15d28"
+					(reference "#FLG012")
 					(unit 1)
 				)
 			)
@@ -10755,7 +10934,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 73.3552 36.83 0)
 			(hide yes)
 			(show_name no)
